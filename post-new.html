@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard | Admin</title>
+    <title>Dashboard | Add New Post</title>
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +12,7 @@
         <div class="uk-navbar-brand">
             <a class="uk-navbar-toggle  uk-hidden-small" data-uk-offcanvas="{target:'#offcanvas-1'}"></a>
             <span>Dashboard</span>
-            <span class="arrow"><i class="uk-icon-chevron-right"></i></span>Admin
+            <span class="arrow"><i class="uk-icon-chevron-right"></i></span>Add New Post
         </div>
         <ul class="uk-navbar-nav">
             <li class="uk-parent" data-uk-dropdown="{mode:'click'}">
@@ -135,20 +135,42 @@
     </div>
 
 </section>
-<section id="analytics">
-    <div class="uk-grid">
-        <div class="uk-width-1-2">
-            <div class="uk-panel uk-panel-box uk-panel-box-secondary posts">
-
-            </div>
+<section id="post-form">
+    <div class="uk-panel uk-panel-box bg-color">
+        <h2 class="uk-text-center">ADD NEW POST</h2>
         </div>
-        <div class="uk-width-1-2">
-            <div class="uk-panel uk-panel-box uk-panel-box-secondary traffic">
-
+    <div class="uk-panel uk-panel-box shadow">
+        <form class="uk-form">
+<div class="uk-form-row">
+    <input type="text" placeholder="Enter Post Title Here" class="uk-form-controls" id="posttitle">
+</div>
+            <div class="uk-form-row">
+                <textarea name="content" id="" cols="30" rows="10" placeholder="Content Here"></textarea>
             </div>
-        </div>
+            <div class="uk-form-row">
+                <input type="submit" value="Publish" class="uk-form-control uk-button uk-button-large uk-button-primary">
+            <div class="select">
+                Category
+                <select name="category" id="select">
+                    <option value="W">Uncategorized</option>
+                    <option value="W">Web Design</option>
+                    <option value="WD">Web Development</option>
+                    <option value="G">Graphic Design</option>
+                </select>
+            </div>
+            </div>
+
+        </form>
     </div>
 </section>
+<footer id="footer">
+    <div class="footer-content">
+        <div class="copyright">
+            <h3 class="uk-text-center">AUXYLOPSTUDIOS</h3>
+            <p>&copy;All Rights Reserved-2016</p>
+        </div>
+    </div>
+</footer>
 <script src="js/jquery.min.js"></script>
 <script src="js/uikit.min.js"></script>
 <script src="js/sticky.min.js"></script>

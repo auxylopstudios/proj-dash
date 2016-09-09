@@ -4,6 +4,7 @@ body {
   background: #acacac;
 }
 #nav {
+  z-index: 9999;
   border-bottom: 2px solid #818181;
 }
 #nav .uk-navbar-toggle {
@@ -11,10 +12,12 @@ body {
 }
 #nav .arrow {
   padding-left: 10px;
+  padding-right: 10px;
 }
 #nav .nav-enlarge {
   border-left: 1px solid #c3c3c3;
   border-right: 1px solid #c3c3c3;
+  cursor: pointer;
   font-weight: lighter;
   font-family: Montserrat, sans-serif;
 }
@@ -27,4 +30,107 @@ body {
 }
 #nav .icon-space i:nth-last-child(1) {
   color: #2d7091;
+}
+#offcanvas-1 .space {
+  padding-right: 18px;
+}
+#social-media-grid {
+  z-index: 999;
+  padding: 5% 4%;
+  box-sizing: border-box;
+}
+#social-media-grid .uk-grid span {
+  font-size: 30px;
+}
+#social-media-grid .uk-grid .comments-span-number {
+  font-size: 30px;
+  color: #fff;
+  font-weight: lighter;
+}
+#social-media-grid .uk-grid .comments {
+  height: 50px;
+  border-radius: 4px;
+  background: #FF5722;
+  box-shadow: rgba(137, 137, 137, 0.87) 0px 3px 0px 0px;
+}
+#social-media-grid .uk-grid .tweet {
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: rgba(137, 137, 137, 0.87) 0px 3px 0px 0px;
+  background: #20A8BE;
+}
+#social-media-grid .uk-grid .likes {
+  height: 50px;
+  background: #C5E1A5;
+  border-radius: 4px;
+  box-shadow: rgba(137, 137, 137, 0.87) 0px 3px 0px 0px;
+}
+#social-media-grid .uk-grid .github {
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: rgba(137, 137, 137, 0.87) 0px 3px 0px 0px;
+  background: #BA68C8 ;
+}
+#analytics {
+  padding: 1% 4%;
+  box-sizing: border-box;
+}
+#analytics .uk-panel-box {
+  height: 400px;
+  box-shadow: rgba(137, 137, 137, 0.87) 0px 3px 3px 3px;
+}
+#analytics .uk-panel-box .posts {
+  background: #f1f1f1;
+}
+#analytics .uk-panel-box .traffic {
+  background: #f1f1f1;
+}
+#post-form {
+  padding: 1% 4%;
+  box-sizing: border-box;
+}
+#post-form .shadow {
+  box-shadow: rgba(137, 137, 137, 0.87) 0px 3px 0px 0px;
+}
+#post-form .bg-color {
+  background: #fff1a0;
+  border-bottom: 3px dashed #ACACAC;
+}
+#post-form input[type=text] {
+  width: 100%;
+  font-size: 20px;
+  height: 35px;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  background: transparent;
+}
+#post-form textarea {
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #d1d1d1;
+  background: transparent;
+  resize: none;
+  width: 100%;
+}
+#post-form .select {
+  float: right;
+}
+#post-form input[type=submit] {
+  box-shadow: rgba(191, 191, 191, 0.87) 0px 2px 0px 0px;
+}
+#footer {
+  margin-top: 5%;
+  padding: 3% 0;
+  background: #fff;
+}
+#footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .footer-content h3 {
+  color: #ACACAC;
+}
+#footer .footer-content p {
+  color: #ACACAC;
 }

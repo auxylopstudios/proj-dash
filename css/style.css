@@ -1,0 +1,30 @@
+html,
+body {
+  font-family: Montserrat, sans-serif;
+  background: #acacac;
+}
+#nav {
+  border-bottom: 2px solid #818181;
+}
+#nav .uk-navbar-toggle {
+  float: left;
+}
+#nav .arrow {
+  padding-left: 10px;
+}
+#nav .nav-enlarge {
+  border-left: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  font-weight: lighter;
+  font-family: Montserrat, sans-serif;
+}
+#nav .nav-enlarge i {
+  padding: 0 5px;
+  color: #e28327;
+}
+#nav .icon-space i {
+  padding-right: 8px;
+}
+#nav .icon-space i:nth-last-child(1) {
+  color: #2d7091;
+}

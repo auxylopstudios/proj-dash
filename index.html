@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Admin</title>
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="uk-navbar uk-navbar-attached" id="nav">
+        <div class="uk-navbar-brand">
+        <a class="uk-navbar-toggle  uk-hidden-small" data-uk-offcanvas="{target:'#offcanvas-1'}"></a>
+            <span>Dashboard</span>
+            <span class="arrow"><i class="uk-icon-chevron-right"></i></span>
+        </div>
+        <ul class="uk-navbar-nav">
+            <li class="uk-parent" data-uk-dropdown>
+                <a class="uk-active nav-enlarge" href=""><i class="uk-icon-plus-circle"></i></a>
+
+                <div class="uk-dropdown uk-dropdown-navbar">
+                    <ul class="uk-nav uk-nav-navbar">
+                        <li><a href="#">Post</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Media</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">User</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Separated item</a></li>
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+
+        <div class="uk-navbar-flip icon-space">
+
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent" data-uk-dropdown>
+                    <a href="">Howdy ,<b>GIDEON</b></a>
+
+                    <div class="uk-dropdown uk-dropdown-navbar">
+                        <ul class="uk-nav uk-nav-navbar">
+                            <li><a href="#"><i class="uk-icon-gear"></i>Settings</a></li>
+                            <li><a href="#"><i class="uk-icon-user"></i>Profile</a></li>
+                            <li class="uk-nav-divider"></li>
+                            <li><a href="#"><i class="uk-icon-sign-out"></i>Logout</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <div id="offcanvas-1" class="uk-offcanvas">
+
+        <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+                <li><a href="">Item</a></li>
+                <li class="uk-active"><a href="">Active</a></li>
+
+                <li class="uk-parent">
+                    <a href="#">Parent</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="">Sub item</a></li>
+                        <li><a href="">Sub item</a>
+                            <ul>
+                                <li><a href="">Sub item</a></li>
+                                <li><a href="">Sub item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="uk-parent">
+                    <a href="#">Parent</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="">Sub item</a></li>
+                        <li><a href="">Sub item</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Item</a></li>
+
+                <li class="uk-nav-header">Header</li>
+                <li class="uk-parent"><a href=""><i class="uk-icon-star"></i> Parent</a></li>
+                <li><a href=""><i class="uk-icon-twitter"></i> Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href=""><i class="uk-icon-rss"></i> Item</a></li>
+            </ul>
+
+        </div>
+        </div>
+
+</header>
+<script src="js/jquery.min.js"></script>
+<script src="js/uikit.min.js"></script>
+</body>
+</html>

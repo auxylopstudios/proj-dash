@@ -1,6 +1,7 @@
 html,body{
   font-family: Montserrat,sans-serif;
   background: #acacac;
+  font-weight: 100;
 }
 
 #nav{
@@ -20,7 +21,7 @@ html,body{
       padding:0 5px;
       color:#e28327;
     }
-   font-weight: lighter;
+   font-weight: 100;
     font-family: Montserrat,sans-serif;
   }
   .icon-space{
@@ -109,6 +110,9 @@ background: #C5E1A5;
   .bg-color{
     background: #fff1a0;
     border-bottom:3px dashed #ACACAC;
+    box-shadow: rgba(137, 137, 137, 0.87) 0px 0px 14px 0px ;
+
+
   }
   padding:1% 4%;
   box-sizing: border-box;
@@ -120,6 +124,38 @@ background: #C5E1A5;
     border-bottom:1px solid #d1d1d1;
     background: transparent;
   }
+  input[type=email]{
+    width:100%;
+    font-size: 20px;
+    height:35px;
+    border:none;
+    border-bottom:1px solid #d1d1d1;
+    background: transparent;
+  }
+  input[type=password]{
+    width:100%;
+    font-size: 20px;
+    height:35px;
+    border:none;
+    border-bottom:1px solid #d1d1d1;
+    background: transparent;
+  }
+  select{
+    background: transparent;
+    padding-right:50px;
+  }
+  #select{
+    height:35px;
+
+    option{
+      padding:12px 0;
+      border-bottom-left-radius:9px;
+      border-bottom-right-radius: 4px;
+      color:#999;
+      font-size: 17px;
+    }
+  }
+
   textarea{
     font-size: 20px;
     border:none;
@@ -132,7 +168,11 @@ background: #C5E1A5;
     float:right;
   }
   input[type=submit]{
-    box-shadow: rgba(191, 191, 191, 0.87) 0px 2px 0px 0px ;
+    box-shadow: rgba(137, 137, 137, 0.87) 0 2px 2px 0 ;
+    &:hover{
+      box-shadow: rgba(137, 137, 137, 0.87) 0px 2px 5px 0px ;
+      background-color: #00a8e6;
+    }
   }
 }
 #footer{

@@ -88,17 +88,23 @@ background: #C5E1A5;
 }
 #analytics{
   padding:1% 4%;
+
+canvas{
+  font-family: "RobotoDraft Light",sans-serif;
+  font-weight:100;
+  background: #fff;
+}
   box-sizing: border-box;
   .uk-panel-box{
     height:400px;
-    box-shadow: rgba(137, 137, 137, 0.87) 0px 3px 3px 3px ;
+    background: #fff;
 .posts{
-  background: #f1f1f1;
+  background-color: #fff !important;
 
 
 }
     .traffic{
-      background: #f1f1f1;
+      background: #fff;
 
     }
   }
@@ -172,6 +178,87 @@ background: #C5E1A5;
     &:hover{
       box-shadow: rgba(137, 137, 137, 0.87) 0px 2px 5px 0px ;
       background-color: #00a8e6;
+    }
+  }
+}
+#posts-list{
+  padding:1% 4%;
+  margin-top:6%;
+  .uk-switcher-2{
+    margin:0;
+    padding:0;
+  }
+  .uk-panel-box-secondary {
+    background-color: #fff;
+
+  }
+  .uk-tab>li.uk-active>a {
+    border:none;
+    border-bottom:4px solid #ff9e8f;
+  }
+  .uk-tab>li>a {
+    padding:10px 18px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    color: #f3a8a5;
+    text-transform:uppercase ;
+  }
+  table{
+    thead{
+     tr{
+       border-bottom: 2px solid #c6c6c6;
+     }
+    }
+    border-left:1px solid #ddd;
+
+      td {
+        padding: 22px 8px;
+      }
+
+  }
+  #table-1{
+    border:1px solid #cccccc;
+    background: #fcfcfc;
+    tbody{
+      tr{
+        border-bottom:1px solid #c6c6c6;
+      }
+    }
+    .uk-button{
+      border:1px solid #cccccc;
+      background-color: transparent;
+color:#333;
+
+      &:hover{
+        background-color: #00a8e6;
+        color:#fff;
+        transition: linear 0.5s;
+      }
+    }
+  }
+  #table-2{
+    border:1px solid #cccccc;
+    .uk-button{
+      border:1px solid #cccccc;
+      background-color: transparent;
+      color:#333;
+
+      &:hover{
+        background-color: #00a8e6;
+        color:#fff;
+        transition: linear 0.5s;
+      }
+    }
+
+  }
+  td{
+    a[href=""]{
+&:hover{
+  transition: linear 0.5s;
+  color: #f3a8a5;
+}
+
+
     }
   }
 }

@@ -140,7 +140,7 @@
         <div class="uk-width-1-2">
             <div class="uk-panel uk-panel-box uk-panel-box-secondary posts">
 
-                    <canvas id="myChart" width="400" height="275"></canvas>
+                    <canvas id="lineChart" width="400" height="275"></canvas>
 
             </div>
         </div>
@@ -152,6 +152,85 @@
 
             </div>
         </div>
+    </div>
+</section>
+<section id="posts-list">
+    <div class="uk-panel uk-panel-box uk-panel-box-secondary posts">
+<ul class="uk-tab" data-uk-tab data-uk-switcher="{connect:'#switch-from-content'}">
+    <li class="uk-active"><a href="#">Posts</a></li>
+    <li><a href="#">Users</a></li>
+    <li><a href="#">Notifications</a></li>
+</ul>
+        <div id="switch-from-content" class="uk-switcher">
+            <table id="table-1" class="uk-table uk-table-condensed" data-uk-switcher-item="0">
+                <thead>
+                <tr>
+                    <th>Post ID</th>
+                    <th>Post Title</th>
+                    <th>Content</th>
+                    <th>Author</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>My First Post</td>
+                    <td>This is the first of the best</td>
+                    <td>James Doe</td>
+                    <td><a class="uk-button uk-button-large uk-button-danger">Edit Post</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Learning To Develop</td>
+                    <td>More is less?Really</td>
+                    <td>John Doe</td>
+                    <td><a class="uk-button uk-button-large uk-button-danger">Edit Post</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Update To Laravel 5.8</td>
+                    <td>Congrats!At last we welcome you</td>
+                    <td>Jane Doe</td>
+                    <td><a class="uk-button uk-button-large uk-button-danger">Edit Post</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="uk-switcher-2">
+            <table id="table-2" class="uk-table uk-table-hover uk-table-striped uk-table-condensed" data-uk-switcher-item="1">
+                <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email Address</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Gideon Auxano</td>
+                    <td><a href="">auxylopstudios@gmail.com</a></td>
+                    <td>Administrator</td>
+                    <td><a class="uk-button uk-button-large uk-button-danger">Edit Detail</a></td>
+                </tr>
+                <tr>
+                    <td>Dennis</td>
+                    <td><a href="">dennistoday@mail.io</a></td>
+                    <td>Editor</td>
+                    <td><a class="uk-button uk-button-large uk-button-danger">Edit Detail</a></td>
+                </tr>
+                <tr>
+                    <td>RichyKing</td>
+                    <td><a href="">richyrich@gmail.com</a></td>
+                    <td>Contributor</td>
+                    <td><a class="uk-button uk-button-large uk-button-danger">Edit Detail</a></td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+
     </div>
 </section>
 <footer id="footer">

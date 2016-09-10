@@ -2,43 +2,67 @@
  * Created by Auxano on 10/09/2016.
  */
 $(function(){
-//chartjs bar
-    var cntx = document.getElementById("myChart").getContext("2d");
-    var myChart = new Chart(cntx, {
-        type: 'bar',
-        data: {
-            labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255,99,132,1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
+//chartjs line
+    var cntx = document.getElementById("lineChart").getContext("2d");
+    var mydata = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+            {
+                label: "Page Visits",
+                fill: false,
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointHitRadius: 20,
+                data: [50, 220, 180, 130, 70, 50, 40, 60, 90, 100],
+                spanGaps: true
+            },
+            {
+                label: "Page Views",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,192,192,0.4)",
+                borderColor: "#FF6384",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+
+
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 10,
+                pointHitRadius: 10,
+                data: [9, 90, 80, 80, 60, 60, 140, 120, 120, 190],
+                spanGaps: false
+            }
+        ]
+    };
+
+    var lineChart = new Chart(cntx, {
+        type: 'line',
+        data: mydata ,
         options: {
             scales: {
                 yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
+                    stacked: true
                 }]
+            },
+            responsive: true,
+            legend: {
+                position: 'top'
+            },
+            title: {
+                display: true,
+                text: 'PAGE VIEWS & VISITS'
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
             }
         }
+
+
     });
     //chartjs doughnut
     var ctx = document.getElementById("myDoughnutChart").getContext("2d");
@@ -73,7 +97,7 @@ $(function(){
             },
             title: {
                 display: true,
-                text: 'Chart.js Doughnut Chart'
+                text: 'NETWORK REFERRALS'
             },
             animation: {
                 animateScale: true,

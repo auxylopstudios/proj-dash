@@ -76,15 +76,20 @@ body {
   padding: 1% 4%;
   box-sizing: border-box;
 }
+#analytics canvas {
+  font-family: "RobotoDraft Light", sans-serif;
+  font-weight: 100;
+  background: #fff;
+}
 #analytics .uk-panel-box {
   height: 400px;
-  box-shadow: rgba(137, 137, 137, 0.87) 0px 3px 3px 3px;
+  background: #fff;
 }
 #analytics .uk-panel-box .posts {
-  background: #f1f1f1;
+  background-color: #fff !important;
 }
 #analytics .uk-panel-box .traffic {
-  background: #f1f1f1;
+  background: #fff;
 }
 #post-form {
   padding: 1% 4%;
@@ -153,6 +158,71 @@ body {
 #post-form input[type=submit]:hover {
   box-shadow: rgba(137, 137, 137, 0.87) 0px 2px 5px 0px;
   background-color: #00a8e6;
+}
+#posts-list {
+  padding: 1% 4%;
+  margin-top: 6%;
+}
+#posts-list .uk-switcher-2 {
+  margin: 0;
+  padding: 0;
+}
+#posts-list .uk-panel-box-secondary {
+  background-color: #fff;
+}
+#posts-list .uk-tab > li.uk-active > a {
+  border: none;
+  border-bottom: 4px solid #ff9e8f;
+}
+#posts-list .uk-tab > li > a {
+  padding: 10px 18px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #f3a8a5;
+  text-transform: uppercase ;
+}
+#posts-list table {
+  border-left: 1px solid #ddd;
+}
+#posts-list table thead tr {
+  border-bottom: 2px solid #c6c6c6;
+}
+#posts-list table td {
+  padding: 22px 8px;
+}
+#posts-list #table-1 {
+  border: 1px solid #cccccc;
+  background: #fcfcfc;
+}
+#posts-list #table-1 tbody tr {
+  border-bottom: 1px solid #c6c6c6;
+}
+#posts-list #table-1 .uk-button {
+  border: 1px solid #cccccc;
+  background-color: transparent;
+  color: #333;
+}
+#posts-list #table-1 .uk-button:hover {
+  background-color: #00a8e6;
+  color: #fff;
+  transition: linear 0.5s;
+}
+#posts-list #table-2 {
+  border: 1px solid #cccccc;
+}
+#posts-list #table-2 .uk-button {
+  border: 1px solid #cccccc;
+  background-color: transparent;
+  color: #333;
+}
+#posts-list #table-2 .uk-button:hover {
+  background-color: #00a8e6;
+  color: #fff;
+  transition: linear 0.5s;
+}
+#posts-list td a[href=""]:hover {
+  transition: linear 0.5s;
+  color: #f3a8a5;
 }
 #footer {
   margin-top: 5%;
